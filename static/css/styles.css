@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  background-color: lightblue;
   min-height: 100%;
   height: auto !important; 
   height: 100%; /** NEED FOR IE **/
@@ -16,26 +17,57 @@ body {
   padding: 0;
 }
 
-ul, ol {
-  padding-left: 24px;
-}
 
 h1 {
   font-size: 36px;
+  font-weight: 300;
+  color: black;
 }
 
 .site-header {
-  padding-top: 0px;
-  border-bottom: 0px solid #c9c9c9;
+  position: fixed;
+  top: 0;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 3px solid #c9c9c9;
   background-color: lightgray;
-  max-width: 100%;
   width: 100%;
+  height: 75px;
   z-index: 2;
 }
 
+
 nav {
-  float: left;
+  float: right;
   padding: 18px 8px 0;
   margin: 0;
   width: 58.333333333333336%;
 }
+
+.nav a {
+  color: rgb(242,242,242);
+  font-size: 14px;
+  font-weight: 500;  
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+  
+ .navbar-toggle {
+    margin-top: 19px;
+    position: relative;
+    top: 0px;
+    right: 12px;
+    background-color: rgb(128,128,128);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+  
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+  }

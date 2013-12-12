@@ -16,21 +16,27 @@
     
     </head>
     
-    <body>
-      <header class="site-header">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-         
-            <nav role="navigation">
-              <ul class="nav nav-justified">
-                <li><a href="/">Home</a></li>
-                <li><a href="/portfolio/">Portfolio</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="{{ site.baseurl }}"></a>
+      </div>
+          
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <div class="navbar-collapse collapse">
+          <nav role="navigation">
+            <ul class="nav nav-justified">
+              <li><a href="/">Work</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Blog</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
 
@@ -38,7 +44,13 @@
             {{ content }}
           </main>
 
-          <div class="container">            
+          <div class="container"> 
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-4">
+                  <h1>Welcome to the Chicago-based design studio of Mike McQuade. A multidisciplinary studio focused on creating strong identities, websites, illustrations, type and artwork for a range of clients and self-initiated projects.</h1>
+                  
+              </div>
+            </div>           
           
             <div class="footer">
               <div class="contact">
@@ -50,5 +62,8 @@
           </div>
         
         </div><!-- Container -->
+        
+        <script src="/static/lib/jquery/jquery.min.js"></script>
+        
     </body>
 </html>
