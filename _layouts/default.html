@@ -1,16 +1,22 @@
+{% set site_name = 'Reconstructing Ideas' %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <title>{{ page.title }} | {{ site_name }}</title>
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}static/css/syntax.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}static/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}static/css/styles.css">
+        
+        
 
     </head>
     <body>
